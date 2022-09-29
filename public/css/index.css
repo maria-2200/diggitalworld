@@ -432,7 +432,7 @@ header {
         height: 109px;
     }
     .menuTopIcons {
-        width: 600px;
+        width: 500px;
         padding-left: 2px;
     }
     .menuTopIcons li {
@@ -517,7 +517,7 @@ header {
     .footer{
         display: grid;
         justify-content: center;
-        font-size: 15px;
+        font-size: 17px;
     }
     .footer .footer-container {
         width: 100%;
@@ -526,10 +526,7 @@ header {
     }
     .footer .footer-container .text-footer {
         margin-bottom: -4px;
-        font-size: 15px;
-    }
-    .footer .footer-container .text-footer span {
-        font-size: 15px;
+        font-size: 17px;
     }
     .footer .support {
         justify-content: center;
