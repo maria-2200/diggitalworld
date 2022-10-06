@@ -159,9 +159,10 @@ export const withdrawals = (req, res) => {
         const wallet = req.body.wallet;
         const usd = req.body.usdRetiro;
         const user = req.body.userName;
+        const reinvestment = req.body.reinvestment;
 
         console.log(`${user} ${wallet} ${usd}`);
-        conection.query("INSERT INTO retiros SET ?", {userName:user, wallet:wallet, usdRetiro:usd}, (error, results) => {
+        conection.query("INSERT INTO retiros SET ?", {userName:user, reinversion:reinvestment,wallet:wallet, usdRetiro:usd}, (error, results) => {
             if(error){
                 console.log(error);
             } else {
