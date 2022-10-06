@@ -480,12 +480,12 @@ header {
         justify-content: center;
         padding-left: 20px;
     }
+
     .main .main-section .overall-profit{
         width: 95%;
         height: 100px;
         margin-bottom: 16px;
         margin-top: -21px;
-        
     }
     .main .main-section .overall-profit h2 {
         font-size: 20px;
@@ -516,6 +516,9 @@ header {
     .main .main-section .active-contracts {
         width: 95%;
         height: 135px;
+    }
+    .main .main-section .active-contracts h2 {
+        margin-left: 158px;
     }
     .main .main-section .active-contracts .saldoDeposito {
         position: relative;
