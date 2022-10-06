@@ -219,6 +219,11 @@ body {
 .input-deposit .uploading-form {
     width: 95%;
 }
+.input-deposit .uploading-form .select-css {
+    width: 99%;
+    border-radius: 20px;
+    height: 30px;
+}
 .input-deposit .uploading-form-team {
     width: 302px;
     display: flex;

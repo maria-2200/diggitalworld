@@ -100,9 +100,10 @@
                 <div class="deposit-terms">
                     <h2>Terms of withdraw </h2>
                     <ul>
-                        <li>-Minimum withdraw 30 USDT</li>
-                        <li>-Transfer cost 1 USDT</li>
-                        <li>48 business hours for it to reflect on your withdrawal address</li>
+                        <li>-Minimum withdraw 30 USDT.</li>
+                        <li>-Transfer cost 1 USDT.</li>
+                        <li>48 business hours for it to reflect on your withdrawal address.</li>
+                        <li>If you choose to transfer the balance to investments, please re-enter your <strong>USER</strong> name in the withdrawal address field.</li>
                     </ul>
                 </div>
                 <div class="input-deposit">
@@ -113,10 +114,14 @@
                                 TRX Tron (TRC20)
                             </p>
                         </section>
+                        <select id="rol" name="rol" class="select-css" tabindex="3">
+                            <option value="Withdraw" selected>withdraw</option>
+                            <option value="data entry">Reinvest</option>                    
+                        </select>
                         <label for="userName">User</label>
                         <input type="text" name="userName" id="userName" placeholder="Enter Username" required aria-required="true">
 
-                        <label for="wallet">Withdrawl Wallet </label>
+                        <label for="wallet">Withdrawal Address </label>
                         <input type="text" name="wallet" id="direction" placeholder="Enter your withdrawal address" required>
 
                         <label for="usdRetiro">USDT Amount</label>

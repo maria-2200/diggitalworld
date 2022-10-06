@@ -120,7 +120,7 @@
                 </div>
             </section>
             <section class="active-contracts">
-                
+                <h2>Investment</h2>
                 <div class="investment">
                     <img src="/icons/contratos.png" alt="">
                     <div class="saldoDeposito"><p>
@@ -133,6 +133,18 @@
                     <a href="deposit" class="btn">New deposit</a>
                 </div>
                 <!-- <p>contactos activos</p> -->
+            </section>
+            <section class="overall-profit">
+                <h2>Total Earnings</h2>
+                <div class="benefits">
+                    <img class="img-btc" src="/icons/btc.png" alt="">
+                        <div class="saldoRetiro"><p>
+                            <% if (user) { %>
+                                <span class="badge bg-success"> <strong><%= user.saldoTotal %></strong> USDT</span>
+                            <% } %></p>
+                        </div> 
+                    <img class="img-wallet" src="/icons/wallet.png" alt="">
+                </div>
             </section>
         </div>
         

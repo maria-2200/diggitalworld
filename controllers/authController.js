@@ -203,8 +203,6 @@ export const guestUser = (req, res) =>{
                     ruta: ''
                 });
             }
-
-            //res.redirect("/")
         })
     } catch (error) {
         console.log(error)
