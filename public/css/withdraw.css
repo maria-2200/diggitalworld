@@ -203,6 +203,12 @@ body {
     color: rgb(47 48 49);
     margin-top: 0;
 }
+.main-section .info-benefit p {
+    font-weight: 600;
+    color: rgb(17 116 163);
+    font-size: 17px;
+    text-align: center;
+}
 .overall-profit {
     width: 100%;
     display: flex;
@@ -211,6 +217,9 @@ body {
 .deposit-terms {
     width: 40%;
     text-align: center;
+}
+.main-section .overall-profit .deposit-terms ul {
+    color: brown;
 }
 .input-deposit {
     width: 50%;

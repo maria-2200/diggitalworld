@@ -498,6 +498,12 @@ header {
         margin-left: 26px;
         font-size: 20px;
         font-weight: 600;
+        position: relative;
+        right: 78px;
+    }
+    .app-slider .text-info p {
+        margin-left: 74px;
+        color: beige;
     }
 
     .menuTopIcons .app-navbar-icon img {

@@ -401,6 +401,9 @@ body {
     .main-section .overall-profit .deposit-terms h2 {
         color: rgb(17 116 163);
     }
+    .main-section .overall-profit .deposit-terms ul {
+        color: brown;
+    }
     .main-section .overall-profit .input-deposit {
         width: 100%;
         display: flex;
