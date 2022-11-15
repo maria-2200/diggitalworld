@@ -2,6 +2,7 @@ import pkg from "jsonwebtoken";
 import bcryptjs from "bcryptjs"
 import { conection } from "../src/db.js";
 import { promisify } from "util";
+import calcularPorcentaje  from '../public/js/porcentaje.js'
 
 const  jwt = pkg;
 
@@ -207,5 +208,30 @@ export const guestUser = (req, res) =>{
         })
     } catch (error) {
         console.log(error)
+    }
+}
+
+// Metodo para sumar porcentaje diario
+export const monederoGanancias = (req, res) => {
+    try {
+        const actualizarSaldo = req.body.calcularPorcentaje;
+
+        conection.query("INSERT INTO users SET ?", {saldoRetiro:actualizarSaldo}, (error, results)=> {
+            if(error) {
+                console.log('El error es: ' + error);
+            } else {
+                res.render('register', {
+                    alert: true,
+                    alertTitle: "Success",
+                    alertMessage: "¡Registered user!",
+                    alertIcon:'success',
+                    showConfirmButton: false,
+                    timer: null,
+                    ruta: ''
+                });
+            }
+        })
+    } catch (error) {
+        console.log(error);
     }
 }

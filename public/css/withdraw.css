@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #010f24;
+    background-color: #474a4f;
     font-family: var(--font-family-titles);
     display: flex;
     flex-direction: column;
@@ -126,6 +126,9 @@ body {
     background-color: #FBFAFB;
     border-radius: 10px;
     list-style: none;
+}
+.menuTopIcons li:active {
+    background-color: #001a50;
 }
 .menuTopIcons a {
     align-items: center; 

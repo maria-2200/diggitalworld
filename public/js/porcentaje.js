@@ -1,18 +1,26 @@
+var saldo= 10;// variable saldo deposito DB
+let ganancias = 0; // variable saldo ganancias DB
+function calcularPorcentaje(){
+    if(saldo<=0){
+        console.log('saldo insuficiente')
+    } else {
 
-let deposito = 200;
-function porcentaje (deposito) {
-    let total = (deposito*5)/100;
-    return total;
+        let ejecutar = setInterval(imprimir, 3000)
+
+        function porcentaje(numero){
+            return numero / 100 * 3;
+            
+        }
+        let total = porcentaje(saldo)
+        console.log(total)
+        function imprimir(){
+            let gananciaTotal = ganancias += total
+            console.log(gananciaTotal)
+        }  
+    }
 }
 
-document.querySelector()
 
-console.log(porcentaje);
-porcentaje(200);
-console.log(porcentaje);
+export default calcularPorcentaje;
 
-setInterval(() => {
-    let suma = 2+2
-    console.log(suma);
-}, 2000);
 

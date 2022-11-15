@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #010f24;
+    background-color: #474a4f;
     font-family: var(--font-family-titles);
 }
 
@@ -158,6 +158,10 @@ body {
     background-color: #FBFAFB;
     border-radius: 10px;
     list-style: none;
+    box-shadow: 5px 5px 5px 0 #1b1919, -1px -1px 3px 0 #1b1919;
+}
+.menuTopIcons li:active {
+    background-color: #001a50;
 }
 .menuTopIcons a {
     align-items: center; 
@@ -204,11 +208,12 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+    
 }
 
 .app-slider {
     background-color: #003259;
-    background-image: url(/img/background3.webp);
+    /* background-image: url(/img/background2.png); */
     width: 67%;
     height: 200px;
     display: flex;
@@ -216,10 +221,16 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: tan;
-    border-bottom: 0.5rem solid #ffc117;
+    /* border-bottom: 0.5rem solid #ffc117; */
     border-radius: 10px;
     font-size: 23px;
     font-family: 'Times New Roman', Times, serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 5px 5px 5px 0 #1b1919, 1px 2px 6px 0 #1b1919;
+}
+.app-slider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 .app-slider .img-regalo {
     background-color: var(--Light-grayish-blue-2);
@@ -272,6 +283,7 @@ header {
     border-radius: 20px;
     border-bottom: 0.5rem solid #ffc117;
     background-color: #dee3ed;
+    box-shadow: 5px 5px 5px 0 #1b1919, 1px 2px 6px 0 #1b1919;
 }
 .overall-profit h2 {
     display: flex;
@@ -308,6 +320,7 @@ header {
     border-radius: 20px;
     border-bottom: 0.5rem solid #ffc117;
     background-color: #dee3ed;
+    box-shadow: 5px 5px 5px 0 #1b1919, 1px 2px 6px 0 #1b1919;
 }
 .active-contracts h2 {
     display: flex;
@@ -480,6 +493,7 @@ header {
 
 
     .app-slider {
+        background-image: url('/img/background-responsive.png');
         width: 95%;
         height: 150px;
         margin-top: -25px;

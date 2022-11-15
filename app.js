@@ -3,7 +3,9 @@ import express from  'express'
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser';
 import router from './routes/router.js';
+import calcularPorcentaje from './public/js/porcentaje.js';
 
+calcularPorcentaje();
 const app = express();
 
 //seteamos el motor de las plantillas
