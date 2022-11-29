@@ -16,7 +16,7 @@ export const register = async (req, res) => {
         let passHash = await bcryptjs.hash(pass, 8);
         console.log(name+ " "+user+" "+pass);
         //console.log(passHash);
-        conection.query("INSERT INTO users SET ?", {user:user, name:name, mail:mail, pass:pass}, (error, results) => {
+        conection.query("INSERT INTO users SET ?", {user:user, name:name, mail:mail ,pass:passHash}, (error, results) => {
             if(error){
                 console.log("el error es: " + error);
             }else {
@@ -58,8 +58,8 @@ export const login = async (req, res) => {
                 ruta: 'login'
             })
         }else{ //Si son validos busca en la tabla el usuario
-            conection.query('SELECT * FROM users WHERE user = ?', [user],  (error, results)=>{
-                if( results.length == 0  ){
+            conection.query('SELECT * FROM users WHERE user = ?', [user], async (error, results)=>{
+                if( results.length == 0 || ! (await bcryptjs.compare(pass, results[0].pass)) ){
                     res.render('login', {
                         alert: true,
                         alertTitle: "Error",
